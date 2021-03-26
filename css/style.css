@@ -1,0 +1,560 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --shadow-color: rgba(7, 172, 230, .16);
+}
+html {
+    font-family: "Open Sans", sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 1352px;
+    margin: 0 auto;
+
+}
+
+.hero {}
+.header {
+    height: 70px;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 2px solid rgba(165,165,165,0.5);
+    box-shadow: 0 3px 6px rgba(165,165,165,0.5);
+}
+
+.header .container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-family: "Raleway", sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #08A6E4;
+    padding-left: 130px;
+}
+.menu{
+    height: 100%;
+}
+.menu__list {
+    list-style-type: none;
+    display: flex;
+    height: 100%;
+}
+.menu__list li {
+    height: 100%;
+}
+.menu__list a {
+    font-family: "Open Sans", sans-serif;
+    color: #A5A5A5;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 28px 40px 27px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 4px solid transparent;
+
+}
+.menu__list a:hover {
+    color: black;
+    border-color: #08A6E4;
+}
+
+/* ---------------------------------- */
+/* --- opening section --- */
+
+/* ---------------------------------- */
+
+.opening_section {
+
+}
+
+.opening__section-banner {
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+
+}
+
+.opening__section-title {
+    font-family: "Raleway", sans-serif;
+    font-size: 49px;
+    color: black;
+    margin: 20px auto;
+
+}
+.opening__section-text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: black;
+}
+.opening__section-button {
+    margin-top: 38px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    width: 440px;
+    height: 67px;
+    background-color: #08A6E4;
+    border-radius: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* ---------------------------------- */
+/* --- statistics section --- */
+
+/* ---------------------------------- */
+
+.statistics{
+    height: 530px;
+    background-color: white;
+}
+.statistics__banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 800px;
+    margin: 100px auto;
+
+}
+.statistic__banner-title{
+    font-family: "Raleway", sans-serif;
+    font-size: 36px;
+    color: black;
+    margin-bottom: 100px;
+    text-align: center;
+
+}
+.statistic__banner-stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+
+}
+.statistics__stats-section1,
+.statistics__stats-section2,
+.statistics__stats-section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.statistics__stats-section1::before {
+    content: "";
+    height: 62px;
+    width: 62px;
+    border-radius: 50%;
+    background-color: #FB3B64;
+}
+
+.statistics__stats-numbers{
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 6px;
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.statistics__stats-text{
+    font-family: "Raleway", sans-serif;
+    font-size: 17px;
+    color: #A5A5A5;
+}
+
+/* ---------------------------------- */
+/* --- benefits --- */
+
+/* ---------------------------------- */
+
+.benefits{
+    background-color: #F7F7F7;
+    padding: 100px 0;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.benefits__single-notebook,
+.benefits__single-iphone {
+    background-color: white;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1124px;
+    height: 370px;
+    margin-bottom: 37px;
+
+}
+
+.benefits__single-iphone {
+    flex-direction: row-reverse;
+}
+
+.benefits__text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 36px;
+    margin-right: 20px;
+
+}
+.benefits__title {
+    font-family: "Raleway", sans-serif;
+    font-size: 36px;
+    color: black;
+    text-align: left;
+    margin-bottom: 30px;
+}
+.benefits__description {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: black;
+    text-align: left;
+    width: 415px;
+}
+
+.benefits__text::after {
+    content: "";
+    width: 328px;
+    height: 4px;
+    margin-top: 50px;
+
+}
+
+.benefits__single-notebook .benefits__text::after {
+    background-color: #FB3B64;
+}
+
+.benefits__single-iphone .benefits__text::after {
+    background-color: #08A6E4;
+}
+
+.benefits__double-trumpet1 .benefits__text::after {
+    background-color: #55DFB4;
+}
+
+.benefits__single-notebook .benefits__image {
+    position: relative;
+    margin-top: 113px;
+    margin-right: 117px;
+    margin-bottom: 38px;
+}
+
+.benefits__single-notebook .benefits__image img {
+    width: 386px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.benefits__single-notebook .benefits__image::before {
+    content: "";
+    background-color: #FB3B64;
+    width: 180px;
+    height: 180px;
+    border-radius: 41px;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: -40px;
+    transform: rotate(45deg);
+}
+
+.benefits__single-iphone .benefits__image {
+    position: relative;
+    width: 426px;
+    height: 345px;
+    margin-left: 70px;
+    margin-top: 12px;
+}
+
+.benefits__single-iphone .benefits__image img {
+    width: 426px;
+    height: auto;
+    position: relative;
+    margin-top: 29px;
+    margin-bottom: 13px;
+}
+
+.benefits__single-iphone .benefits__image::before {
+    content: "";
+    background-color: #08A6E4;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+}
+
+.benefits__double{
+    width: 1124px;
+    height: 370px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.benefits__double-trumpet1{
+    width: 623px;
+    height: 370px;
+    background-color: white;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.benefits__double-trumpet1 .benefits__text {
+    width: 554px;
+    height: 230px;
+    margin-top: 70px;
+}
+.benefits__double-trumpet1 .benefits__description {
+    width: 100%;
+}
+
+.benefits__double-trumpet2 {
+    width: 440px;
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefits__double-trumpet2 .benefits__image {
+    width: 440px;
+    height: 370px;
+    background-color: #55DFB4;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefits__double-trumpet2 .benefits__image img {
+    width: 295px;
+    height: auto;
+}
+
+/* ---------------------------------- */
+/* --- pricing --- */
+
+/* ---------------------------------- */
+
+.pricing{}
+
+.pricing .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pricing__box_main {
+    width: 1266px;
+    height: 616px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.pricing__title{
+    font-family: "Raleway", sans-serif;
+    font-size: 36px;
+    text-align: center;
+    color: #000000;
+}
+
+.pricing__boxes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    width: 1266px;
+    height: 616px;
+
+}
+
+.pricing__box-basic,
+.pricing__box-premium,
+.pricing__box-professional {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 370px;
+    height: 460px;
+    border-radius: 18px;
+    border: 1px solid;
+}
+
+.pricing__box-basic {
+    border-color: #FB3B64;
+}
+
+.pricing__box-professional {
+    width: 405px;
+    height: 500px;
+    border-color: #08A6E4;
+    box-shadow: 5px 10px 27px #07ACE629;
+}
+
+.pricing__box-premium {
+    border-color: #55DFB4;
+}
+
+.pricing__box-details{
+    margin-top: 34px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.pricing__type{
+    font-family: "Raleway", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #13253B;
+}
+
+.pricing__box-professional .pricing__type {
+    font-size: 21px;
+}
+
+.pricing__price {
+    font-family: "Open Sans", sans-serif;
+    font-size: 46px;
+    font-weight: 300;
+    margin-top: 25px;
+}
+
+.pricing__box-basic .pricing__price {
+    color: #FB3B64;
+}
+
+.pricing__box-professional .pricing__price {
+    color: #08A6E4;
+}
+
+.pricing__box-premium .pricing__price {
+    color: #55DFB4;
+}
+
+.pricing__limited {
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #13253B;
+    text-align: center;
+    margin-top: 15px;
+
+}
+.pricing__items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.pricing__item,
+.pricing__item-not {
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.pricing__item-not{}
+
+.pricing__box-professional .pricing__item,
+.pricing__box-professional .pricing__item-not {
+    margin-bottom: 25px;
+}
+
+.pricing__item::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background: url("../images/Ckechmark-1.svg");
+}
+
+.pricing__item-not::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background: url("../images/Close.svg");
+}
+
+.pricing__button {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    width: 150px;
+    height: 50px;
+    border-radius: 23px;
+    align-items: center;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: -65px;
+
+}
+
+.pricing__box-basic .pricing__button {
+    background-color: #FB3B64;
+}
+
+.pricing__box-professional .pricing__button {
+    background-color: #08A6E4;
+    width: 165px;
+    box-shadow: 5px 10px 14px #07ACE629;
+}
+
+.pricing__box-premium .pricing__button {
+    background-color: #55DFB4;
+}
+
+
+
+
+
+
+
+
+
+
+
