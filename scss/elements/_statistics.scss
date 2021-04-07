@@ -8,13 +8,9 @@
   &__main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 800px;
+    max-width: 800px;
     margin: 100px auto 120px;
 
-    @include mobile {
-      width: 100vh;
-    }
   }
 
   &__title {
@@ -23,8 +19,12 @@
     color: $color-black;
     text-align: center;
 
+    @include tablet {
+      font-size: 2rem;
+    }
+
     @include mobile {
-      padding: 0px 150px 0px 0px;
+      padding: 0px 70px ;
       text-align: center;
       line-height: 35px;
       font-size: 1.875rem;
@@ -40,7 +40,6 @@
 
     @include mobile {
       flex-direction: column;
-      width: 100vh;
       align-items: center;
       margin: 35px auto 50px;
 
@@ -123,130 +122,3 @@
 }
 
 
-
-
-
-//.statistics {
-//  margin-top: 100px;
-//
-//  @include mobile {
-//    margin-top: 50px;
-//  }
-//
-//  &__main {
-//    display: flex;
-//    flex-direction: column;
-//    justify-content: center;
-//    width: 800px;
-//    margin: 100px auto 120px;
-//
-//    @include mobile {
-//      width: 100vh;
-//    }
-//  }
-//
-//  &__title {
-//    font-family: $font-raleway;
-//    font-size: 2.25rem;
-//    color: $color-black;
-//    text-align: center;
-//
-//    @include mobile {
-//      padding: 0px 150px 0px 0px;
-//      text-align: center;
-//      line-height: 35px;
-//      font-size: 1.875rem;
-//    }
-//  }
-//
-//  &__box-container {
-//    display: flex;
-//    justify-content: space-between;
-//    text-align: center;
-//    align-items: center;
-//    margin-top: 100px;
-//
-//    @include mobile {
-//      flex-direction: column;
-//      width: 100vh;
-//      align-items: center;
-//      margin: 35px auto 50px;
-//
-//    }
-//  }
-//
-//  &__box {
-//    display: flex;
-//    flex-direction: column;
-//    align-items: center;
-//    max-width: 160px;
-//    font-family: $font-raleway;
-//
-//    @include mobile {
-//      margin-bottom: 35px;
-//
-//      &:last-child {
-//        margin-bottom: 0;
-//      }
-//  }
-//
-//    &:nth-child(1) {
-//      .statistics__circle {
-//        background-color: $color-red;
-//      }
-//
-//      .statistics__img {
-//        top: 0;
-//        left: 45%;
-//      }
-//    }
-//
-//    &:nth-child(2) {
-//      .statistics__circle {
-//        background-color: $color-primary;
-//      }
-//
-//      .statistics__img {
-//        top: 14px;
-//        left: 47%
-//      }
-//    }
-//
-//    &:nth-child(3) {
-//      .statistics__circle {
-//        background-color: $color-green;
-//      }
-//
-//      .statistics__img {
-//        top: 6px;
-//        left: 50%;
-//      }
-//    }
-//  }
-//
-//  &__circle {
-//    width: 62px;
-//    height: 62px;
-//    border-radius: 50%;
-//    position: relative;
-//  }
-//
-//  &__img {
-//    position: relative;
-//  }
-//
-//  &__numbers {
-//    font-size: 1.25rem;
-//    font-weight: 800;
-//    letter-spacing: 6px;
-//    color: $color-black;
-//    margin-top: 15px;
-//    margin-bottom: 20px;
-//  }
-//
-//  &__text {
-//    font-size: 1rem;
-//    color: $color-grey;
-//  }
-//}
-//
