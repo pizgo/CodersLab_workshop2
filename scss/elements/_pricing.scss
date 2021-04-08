@@ -1,0 +1,181 @@
+.pricing {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include tablet {
+    margin: 50px auto;
+  }
+
+  &__title {
+    font-family: $font-raleway;
+    font-size: 2.25rem;
+    text-align: center;
+    color: $color-black;
+  }
+
+  &__boxes {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mobile {
+      flex-direction: column;
+      margin-top: 14px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 370px;
+    border-radius: 18px;
+    border: 1px solid var(--accent-color);
+
+    @include mobile {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      max-width: 370px;
+      margin-bottom: 50px;
+      justify-content: center;
+      padding: 25px 10px 0 0;
+    }
+
+    .btn {
+      font-family: $font-open-sans;
+      font-size: 0.81rem;
+      color: $color-white;
+      font-weight: bold;
+      width: 150px;
+      height: 50px;
+      border-radius: 23px;
+      align-items: center;
+      text-decoration: none;
+      display: inline-flex;
+      justify-content: center;
+      position: relative;
+      bottom: - 30px;
+      background-color: var(--accent-color);
+    }
+
+    &-basic {
+      --accent-color: #{$color-red};
+    }
+
+    &-professional {
+      --accent-color: #{$color-primary};
+      width: 405px;
+      height: 500px;
+      box-shadow: 5px 10px 27px #07ACE629;
+      margin: 0 60px;
+
+      @include mobile {
+        height: 277px;
+        margin-bottom: 50px;
+      }
+
+      .pricing {
+        &__type {
+          font-size: 1.31rem;
+        }
+      }
+
+      .item {
+        margin-bottom: 25px;
+      }
+    }
+
+    &-premium {
+      --accent-color: #{$color-green};
+    }
+
+  }
+
+
+  &__details {
+    margin-top: 34px;
+    margin-bottom: 60px;
+    text-align: center;
+
+    @include mobile {
+      width: 50%;
+    }
+  }
+
+  &__type {
+    font-family: $font-raleway;
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  &__price {
+    font-family: $font-open-sans;
+    font-size: 2.875rem;
+    font-weight: 300;
+    margin-top: 25px;
+    color: var(--accent-color);
+  }
+
+  &__limited {
+    font-family: $font-raleway;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: $color-black;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  &__items {
+    text-align: center;
+
+    @include mobile {
+      width: 50%;
+    }
+  }
+
+  &__item {
+    font-family: $font-open-sans;
+    text-align: center;
+    font-size: 0.875rem;
+    margin-bottom: 20px;
+
+    @include mobile {
+      text-align: left;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &::before {
+      content: "";
+      width: 11px;
+      height: 11px;
+      display: inline-block;
+      margin-right: 10px;
+      background: url("../../images/Ckechmark-1.svg");
+    }
+
+    &--not::before {
+      background: url("../../images/Close.svg");
+    }
+  }
+}
+
+
+
+.pricing__box-professional .btn--primary {
+  width: 165px;
+  box-shadow: 5px 10px 14px #07ACE629;
+  bottom: -90px;
+
+  @include mobile {
+    bottom: -10px;
+  }
+}
+

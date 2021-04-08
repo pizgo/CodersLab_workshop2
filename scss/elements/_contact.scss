@@ -1,0 +1,173 @@
+.contact {
+  padding: 80px 100px 100px;
+  display: flex;
+  justify-content: center;
+
+  @include tablet {
+    flex-direction: column;
+    padding: 0px 60px;
+    align-items: center;
+
+  }
+
+  &__column {
+    width: 50%;
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 3.06rem;
+    line-height: 3.68rem;
+    font-family: $font-raleway;
+
+    @include tablet {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__instruction {
+    font-size: 1rem;
+    line-height: 1.37rem;
+    margin: 22px 0 42px;
+    font-family: $font-open-sans;
+
+    @include tablet {
+      margin: 5px 0 30px;
+    }
+  }
+
+  &__details {
+    display: flex;
+    justify-content: flex-start;
+    color: $color-grey;
+    align-items: center;
+    font-size: 1rem;
+
+    @include tablet {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .details__item {
+      text-decoration: none;
+
+      @include tablet {
+        margin-bottom: 10px;
+      }
+
+      &:first-of-type {
+        margin-right: 20px;
+      }
+
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+    margin-top: 50px;
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    &:first-of-type {
+      margin-bottom: 42px;
+    }
+  }
+
+  &__label {
+    text-transform: uppercase;
+    color: $color-primary;
+    font-family: $font-open-sans;
+    font-size: 0.6875rem;
+    line-height: 0.9rem;
+    letter-spacing: 3px;
+    font-weight: bold;
+  }
+
+  &__input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid $color-grey;
+    line-height: 2.625rem;
+  }
+
+  &__consent {
+    margin-top: 30px;
+  }
+
+  &__checkbox {
+    font-size: 1.375rem;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+
+      &:checked {
+        ~ .checkbox {
+          background-image: url(../../images/Checkmark.svg);
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+    .checkbox {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 25px;
+      height: 25px;
+      border: 1px solid $color-grey;
+      border-radius: 4px;;
+    }
+
+    .consent__text {
+      margin: 0 10px;
+      font-size: 0.75rem;
+      font-family: $font-open-sans;
+      color: $color-grey;
+      line-height: 17px;
+    }
+  }
+
+  .btn {
+    background-color: $color-primary;
+    border: 1px solid $color-primary;
+    font-family: $font-open-sans;
+    font-size: 0.81rem;
+    color: $color-white;
+    font-weight: bold;
+    border-radius: 23px;
+    align-items: center;
+    width: 226px;
+    height: 57px;
+    align-self: flex-end;
+  }
+
+}
+
+
+
+
+
